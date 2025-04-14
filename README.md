@@ -1,90 +1,96 @@
 # ⚙️ Practical System – Backend
 
-This repository contains the backend implementation of the Practical System project. It is built using Node.js and Express.js, providing RESTful APIs for various functionalities.
+This repository contains the **backend** implementation of the Practical System project. It is built using **Node.js** and **Express.js**, and provides RESTful APIs to support core functionalities. This project does **not** include any frontend code.
+
+---
 
 ## ✨ Features
 
-- 🧩Modular architecture with organized folders for controllers, routes, models, and configurations
-- � API endpoints defined in the `api` director.
-- ⚙ Configuration management through the `config` folde.
-- � Deployment configuration via `vercel.jso`.
+- ✅ Well-structured modular architecture
+- 📁 Organized folders for controllers, routes, models, and configuration
+- 🌐 RESTful API development using Express
+- ⚙️ Environment-based configuration support
+- 🚀 Ready for deployment (configured for Vercel)
 
-## 🗂️ Project Structue
+---
 
+## 🗂️ Folder Structure
 
-
-```bash
+```
 practical_system/
-├── Controllers/        # Handles request logic
-├── Routes/             # Defines API endpoints
-├── api/                # Contains API-related files
-├── config/             # Configuration files
-├── models/             # Database models
+├── Controllers/        # Handles business logic
+├── Routes/             # API route definitions
+├── api/                # Additional API logic
+├── config/             # Environment and configuration settings
+├── models/             # MongoDB models or schema definitions
 ├── package.json        # Project metadata and dependencies
-├── package-lock.json   # Dependency lock file
+├── package-lock.json   # Lock file for dependencies
 └── vercel.json         # Vercel deployment configuration
 ```
 
-## 🚀 Getting Started
+---
 
-### 📋 Prerequisits
+## ⚙️ Setup Instructions
 
-- Node.js (version 14 or bove
-- npm (Node Package Maager)
+### 📋 Prerequisites
 
-### 🛠️ Installatin
+- [Node.js](https://nodejs.org/) (v14 or later)
+- npm (comes with Node.js)
 
-1. Clone the repoitory:
+### 🛠️ Installation
+
+1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/Om976346/practical_system.git
    cd practical_system
-  
+   ```
 
-
-2. Install dependncies:
+2. **Install dependencies:**
 
    ```bash
    npm install
-  
+   ```
 
-3. Configure environment varables:
+3. **Set up environment variables:**
 
-   Create a `.env` file in the root directory and add necessary environment variables as required by your application.
+   Create a `.env` file in the root folder and add necessary environment variables. Example:
 
-### ▶️ Running the Appliction
+   ```
+   PORT=3000
+   DB_URI=your_mongodb_connection_string
+   ```
 
+---
 
+## ▶️ Running the Server
 
 ```bash
 npm start
 ```
 
-
-The server will start on the default port (e.g., `http://localhost:000`).
-## 📦 Deplyment
-
-This application is configured for deployment onVrcel. Ensure that the `vercel.json` file is properly set up with your project's build and output sttings.
-
-## 🤝 Contrbuting
-
-Contributions arewlcome! Please fork the repository and submit a pull request for any enhancements or bg fixes.
-
-## 📄License
-
-This project is licensed under the [MIT License]LICENSE)
+By default, the server runs on `http://localhost:3000`.
 
 ---
 
-*Note: GitHub's markdown renderer does not support external icon libraries like Font Awesome. To include custom icons, you can use emojis or embed SVG images directly. Forexaple:*
+## 📦 Deployment
 
+This backend is pre-configured for deployment on **Vercel** using the `vercel.json` file.
 
+To deploy:
 
-```markdown
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/crown.svg" width="20" height="20" alt="Crown Icn">```
+1. Push the code to your GitHub repository.
+2. Connect the repository to Vercel.
+3. Vercel will automatically build and deploy the backend.
 
-
+---
 
-*This method allows you to display icons in your README.md file by embedding SVG images irectly.*
+## 🤝 Contributing
 
---- 
+Contributions are welcome! Please fork this repository and submit a pull request with improvements or fixes.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
